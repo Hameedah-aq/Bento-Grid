@@ -1,0 +1,312 @@
+@import url("https://fonts.google.com/specimen/DM+Sans:wght@500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+     --grey: hsl(254, 88%, 90%);
+     --Purple: hsl(256, 67%, 59%);
+     --cream: hsl(31, 66%, 93%);
+     --Yellow: hsl(39, 100%, 71%);
+     --White: hsl(0, 0%, 100%);
+     --Black: hsl(0, 0%, 7%);
+     --sans: url("https://fonts.google.com/specimen/DM+Sans:wght@500;600&display=swap");
+}
+html{
+    font-size: 62.5%;
+}
+@media (width:1200px){
+    html{
+        font-size: 58%;
+    }
+}
+@media (width:900px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (width:600px){
+    html{
+        font-size: 43.7%;
+    }
+}
+
+.illustration{
+    max-width: 1440px;
+    display: grid;
+    justify-content: center;
+    border-radius: .8rem;
+    /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); */
+    grid-auto-columns: 20rem;
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "item1 item2 item2 item3"
+    "item1 item5 item6 item3"
+    "item4 item7 item8 item8";
+}
+
+/* @media (min-width:500px) {
+.illustration{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); 
+    grid-auto-columns: 20rem;
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "item1 item2 item2 item3"
+    "item1 item5 item6 item3"
+    "item4 item7 item8 item8";
+}
+} */
+@media (max-width: 640px) {
+.illustration{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax( 1fr));
+    grid-auto-columns: 20rem;
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "item1 item2 item2 item3"
+    "item1 item5 item6 item3"
+    "item4 item7 item8 item8"; 
+}
+}
+/* @media (max-width:800px) {
+.illustration{
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr, 2fr, 1fr)); 
+    grid-auto-columns: 20rem;
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "item1 item2 item2 item3"
+    "item1 item5 item6 item3"
+    "item4 item7 item8 item8";
+}
+}  */
+body{
+    display: grid;
+    font-family: var(--sans);
+    margin: 0 20rem;
+    padding: rem;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color:aliceblue;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    margin: 5rem;
+    padding: 5rem;
+    gap: .5rem;
+}
+.illustration .item{
+    border-radius: .5rem;
+    margin: 1rem 1rem;
+}
+.create-post{
+    grid-area: item1;
+    background-color: var(--cream);
+    margin: .5rem;
+    padding: 1.5rem; 
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    border-radius: .8rem; 
+    justify-content: center;
+    align-items: center;
+}
+.create{
+    margin-top: 1.5rem;
+    width: 90%;
+    height: 50%;
+}
+.five-stars{
+    grid-row: item2;
+    background-color: var(--Purple);
+    align-items: center;
+    justify-content: center;
+    border-radius: .8rem;
+    margin: .5rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--White);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.five{
+    width: 60%;
+}
+.ten{
+    color: var(--Yellow);
+}
+.schedule-posts{
+    grid-column: item3;
+    background-color: var(--grey);
+    width: 100%;
+    height: 100%;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: .8rem;
+    margin: .5rem;
+    padding: 2rem; 
+}
+.schedule{
+    width: 100%;
+    height: 100%;
+    margin: 1.8rem 0;
+    padding-left: 3.rem;
+}
+.ai-content{
+    grid-row: item4;
+    background-color: var(--Yellow);
+    margin: .5rem;
+    padding: 1.5rem;
+    border-radius: .8rem; 
+    height: 100%;
+    width: 100%;
+}
+.ai{
+    width: 80%;
+    margin-top: .5rem;
+}
+.multiple-platforms{
+    grid-column: item5;
+    background-color: var(--White);
+    width: 100%;
+    height: 100%; 
+    font-size: 1.6rem;
+    margin: .3rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    line-height: 1.7rem;
+}
+.multiple{
+    width: 100%;
+    height: 50%;
+}
+.consistent-schedule{
+    grid-column: item6;
+    background-color: var(--Yellow);
+    width: 100%;
+    height: 100%;
+    margin: .5rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    line-height: 1.5rem;
+}
+.consistent{
+    margin-top: .8rem;
+    width: 85%;
+}
+.audience-growth{
+    grid-column: 1tem7;
+    background-color: var(--White);
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+.faster{
+    margin: 1rem;
+}
+.num{
+    font-size: 3rem;
+}
+.audience{
+    margin-top: 1rem;
+    width: 80%;
+    height: 30%;
+}
+.grow-followers{
+    grid-column: item8;
+    background-color: var(--Purple);
+    color: var(--White);
+    margin: .5rem;
+    padding: .8rem;
+    border-radius: .8rem;
+    display: flex;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.grow{
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+/* Media query for mobile (smaller than 640px) */
+@media (max-width: 640px) {
+
+}
+/* Media query for tablet (from 641px to 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+
+}
+/* Media query for larger screen(from 1024px and above) */
+@media (min-width: 641px) and (max-width: 1024px) {
+    
+}
+.boxes{
+    display: grid;
+    justify-content: center;
+    margin-top: 20rem;
+    gap: 2rem;
+    grid-auto-columns: 20rem;
+    grid-auto-rows: 20rem;
+    grid-template-areas: 
+    "right middle middle left"
+    "right inside inner left"
+    "bottom line through through";
+}
+/* .box{
+    border-radius: 1rem;
+    text-align: center;
+}
+.box__1{
+    background-color: var(--cream);
+    grid-area: right;
+}
+.box__2{
+    background-color: var(--Purple);
+    grid-area: middle;
+}
+.box__3{
+    background-color: var(--grey);
+    grid-area: left;
+}
+.box__4{
+    background-color: var(--White);
+    grid-area: inside;
+}
+.box__5{
+    background-color: var(--Yellow);
+    grid-area: inner;
+}
+.box__6{
+    background-color: var(--Yellow);
+    grid-area: bottom;
+}
+.box__7{
+    background-color: var(--White);
+    grid-area: line;
+}
+.box__8{
+    background-color: var(--Purple);
+    grid-area: through;
+} */
+
+
+
+
+
