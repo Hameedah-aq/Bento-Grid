@@ -268,7 +268,7 @@ body{
     "right middle middle left"
     "right inside inner left"
     "bottom line through through";
-}
+/* }
 .box{
     border-radius: 1rem;
     text-align: center;
@@ -304,7 +304,7 @@ body{
 .box__8{
     background-color: var(--Purple);
     grid-area: through;
-}
+} */
 
 
 
